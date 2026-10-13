@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nama Kamu — Web Developer & Designer</title>
+  <meta name="description" content="Portofolio Nama Kamu, web developer dan desainer digital yang membuat website modern, cepat, dan mudah digunakan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Nama<span>.</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact" class="nav-cta">Kontak</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Ubah tema">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Halo, saya</p>
+          <h1>Nama Kamu</h1>
+          <h2>Web Developer & UI Designer</h2>
+          <p class="lead">
+            Saya membuat website modern, responsif, dan berfokus pada pengalaman pengguna.
+            Saat ini terbuka untuk proyek freelance maupun kolaborasi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>3+</strong>
+              <span>Tahun pengalaman</span>
+            </div>
+            <div>
+              <strong>20+</strong>
+              <span>Proyek selesai</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span>Klien puas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar">NK</div>
+          <h3>Frontend Developer</h3>
+          <p>HTML • CSS • JavaScript • UI Design</p>
+          <div class="tags">
+            <span>Responsive</span>
+            <span>Clean Code</span>
+            <span>Modern UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Tentang Saya</p>
+          <h2>Membangun produk digital yang bermanfaat</h2>
+        </div>
+
+        <div class="about-grid">
+          <p>
+            Saya adalah web developer yang menyukai desain bersih, performa cepat, dan pengalaman pengguna yang intuitif.
+            Saya membantu bisnis dan individu mengubah ide menjadi website yang profesional.
+          </p>
+          <p>
+            Fokus saya adalah membuat antarmuka yang tidak hanya menarik, tetapi juga mudah digunakan di semua perangkat.
+            Setiap proyek saya kerjakan dengan perhatian pada detail, struktur kode, dan tujuan bisnis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Keahlian</p>
+          <h2>Teknologi yang saya gunakan</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, responsive design, dan animasi web.</p>
+          </article>
+          <article class="skill-card">
+            <h3>UI/UX Design</h3>
+            <p>Desain antarmuka, wireframe, design system, dan prototyping.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, Figma, VS Code, dan dasar SEO teknis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Portofolio</p>
+          <h2>Proyek pilihan</h2>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="web">Website</button>
+          <button class="filter" data-filter="ui">UI Design</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="web">
+            <div class="project-thumb placeholder-1"></div>
+            <div class="project-body">
+              <span class="project-tag">Website</span>
+              <h3>Landing Page Bisnis</h3>
+              <p>Website promosi dengan desain modern dan optimasi mobile.</p>
+              <a href="#" class="project-link">Lihat detail →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ui">
+            <div class="project-thumb placeholder-2"></div>
+            <div class="project-body">
+              <span class="project-tag">UI Design</span>
+              <h3>Dashboard Analytics</h3>
+              <p>Desain dashboard sederhana untuk memantau data bisnis.</p>
+              <a href="#" class="project-link">Lihat detail →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <div class="project-thumb placeholder-3"></div>
+            <div class="project-body">
+              <span class="project-tag">Website</span>
+              <h3>Toko Online Mini</h3>
+              <p>Katalog produk dengan navigasi kategori dan halaman produk.</p>
+              <a href="#" class="project-link">Lihat detail →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">Kontak</p>
+          <h2>Mari kerja sama</h2>
+          <p>Punya ide proyek atau ingin berdiskusi? Kirim pesan melalui email atau media sosial.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:nama@email.com" class="btn btn-primary">Email Saya</a>
+          <a href="https://wa.me/6281234567890" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nama Kamu. Semua hak dilindungi.</p>
+      <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
